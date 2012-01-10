@@ -1,0 +1,85 @@
+---
+layout: nil
+---
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <!-- Slide meta data, remove/edit as you see fit -->
+        <title>What is this programming jazz?</title>
+        <meta name="generator" content="Sublime Editor 2" />
+        <meta name="author" content="orta therox" />
+        <meta name="company" content="http://ortatherox.com" />
+        <meta name="email" content="orta.therox@gmail.com" />
+        <meta name="date" content="9th Jan 2012 18:54:20 NYC Time" />
+        <meta name="venue" content="The Internets" />
+        <!-- Slippy core file and dependencies -->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.history.js"></script>
+        <script type="text/javascript" src="assets/js/slippy.js"></script>
+        <!-- Slippy structural styles -->
+        <link type="text/css" rel="stylesheet" href="assets/css/slippy.css"/>
+        <!-- Slippy theme -->
+        <link type="text/css" rel="stylesheet" href="assets/css/slippy-pure.css"/>
+
+        <link rel="stylesheet" href="http://orta.github.com/assets/fonts/stylesheet.css">
+        <link rel="stylesheet" href="http://orta.github.com/assets/stylesheets/style.css">
+        <link rel="stylesheet" href="http://orta.github.com/assets/stylesheets/syntax.css">
+        
+
+        <style>
+            h1{
+                font-size : 2em;
+            }
+            
+            h1, h2, li, p, table{
+                margin-bottom: 1em;
+            }
+            .code_heading{
+                margin-bottom: -3px !important;
+            }
+            td{
+                padding: 6px;
+            }
+
+        </style>
+        <!-- Slippy init code -->
+        <script type="text/javascript">
+            $(function() {
+                $(".slide").slippy({
+                    // settings go here
+                    // possible values are:
+                    //  - animLen, duration for default animations (0 = disabled)
+                    //  - animInForward, receives a slide and animates it
+                    //  - animInRewind, receives a slide and animates it
+                    //  - animOutForward, receives a slide and animates it
+                    //  - animOutRewind, receives a slide and animates it
+                    //  - baseWidth, defines the base for img resizing, if you don't want only
+                    //    full-width images, specify this as the pixel width of a slide so that
+                    //    images are scaled properly (default is 620px wide)
+                    //  - ratio, defines the width/height ratio of the slides, defaults to 1.3 (620x476)
+                    //  - margin, the fraction of screen to use as slide margin, defaults to 0.15
+                });
+                SyntaxHighlighter.all();
+            });
+        </script>
+        <!-- Custom style for this deck -->
+        <style type="text/css">
+            .slide.nofooter {
+                border: 0;
+                background: 0;
+            }
+        </style>
+    </head>
+    <body>
+        {% for post in site.posts %}
+            
+            <!-- {{ post.title }} - {{post.slide }} --> 
+             {{ post.content }}
+        {% endfor %}
+        <div class="layout" data-name="default">
+            <content></content>
+        </div>
+    </body>
+</html>

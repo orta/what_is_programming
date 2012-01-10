@@ -1,0 +1,266 @@
+---
+title: "interface builder 4"
+slide: true
+---
+
+<style>blockquote {  font-size: 1.5em; } </style>
+
+<div class="slide">
+
+h1. What is Programming?
+  
+* A program is a way of making a computer do something.
+* A programmer is a person who makes these things. But also makes it obvious how it works to someone else.
+
+* To do that the programmer has to instruct the computer how to do something.
+* Just like a recipe for making a meal.
+
+</div><div class="slide">
+
+h1. Why do we start programming?
+  
+* It's fun.
+
+</div><div class="slide">
+
+
+h1. Aren't there better ways?
+
+* As time progresses we get further away from what the computer wants.
+* Programmers look for expressiveness in code.
+* Beautiful code is readable code.
+
+</div><div class="slide">
+
+
+h1. Terminology
+
+* Computer Program / App -> Things that run.
+* Programming Language -> Things that can be ran.
+* Compiler -> Things that turn code into apps.
+
+</div><div class="slide">
+
+
+h1. So what is the most basic paradigm?
+* You have a computer language
+
+* You give another program a file, or write in the code yourself. And the program just goes down line by line. We'll make a lot of these.
+
+</div><div class="slide">
+
+h1. Show me the code
+
+
+h4(code_heading).  BASIC
+
+{% highlight ruby %}
+  
+  10 PRINT "YEAH!"
+  20 GOTO 10
+  RUN
+
+{% endhighlight %}
+
+These are some simple examples
+
+h4(code_heading).  Ruby 
+
+{% highlight ruby %}
+  
+  puts "Hello World"
+
+{% endhighlight %}
+
+Lets jump in and see what they do.
+
+</div><div class="slide">
+
+
+h1. So what is happening here?
+
+* In the first example
+* In the second
+
+</div><div class="slide">
+
+h1. but but but, I want it to do something!
+
+* On how we can do an input and an output
+
+h4(code_heading).  Ruby 
+
+{% highlight ruby %}
+  
+  puts "What would you want to eat?"
+  something_nice = gets
+
+  puts "I love"
+  puts something_nice
+  puts "too."
+
+{% endhighlight %}
+
+</div><div class="slide">
+
+h1. So what is happening here?
+
+* Why are there quotes around things
+* what puts, and gets are
+* What is a string?
+  
+</div><div class="slide">
+
+h1. page intentionally blank
+
+</div><div class="slide">
+
+
+h1. What is a variable
+  
+h4(code_heading).  Javascript 
+
+{% highlight js %}
+  
+  var cheese = "brie"
+  cheese
+  cheese = "cheddar"
+  cheese
+  cheese = "wensleydale"
+{% endhighlight %}
+
+</div><div class="slide">
+
+h1. Why are they variables useful?
+  
+* The official answer, to retain state.
+* A better answer, so the computer can remember things, not us
+* Lets make a cooking example, keeping track of how many apples we have
+
+h4(code_heading).  Javascript 
+
+{% highlight js %}
+  
+  var number_of_apples = 5
+  "Oh look more apples!"
+  number_of_apples = number_of_apples + 10;
+  "Oh... orta ate a lot"
+  number_of_apples = number_of_apples - 20;
+  "wait, how do we have minus apples?"
+{% endhighlight %}
+
+or we could ask as the program is running  
+
+h4(code_heading).  Ruby 
+
+{% highlight ruby %}
+  
+  number_of_pies = 200
+  puts "you have " + number_of_pies.to_s + " pies"
+  puts "how many were lunched?"
+  number_of_pies =  number_of_pies - gets.to_i
+  puts "you now have " + number_of_pies.to_s + " pies"
+{% endhighlight %}
+
+</div><div class="slide">
+
+h1. Methods how do they work?
+  
+* Methods are ways to name bits of code
+* We've been using a few methods
+* puts, gets, print, goto, to_s, to_i
+
+h2. We can use and make our own methods.
+
+</div><div class="slide">
+
+h1. page intentionally blank
+
+</div><div class="slide">
+
+
+h1. Objects 
+  
+* The world is full of objects
+* Therefore it makes sense to simulate objects
+
+* I'm a person, I am of the same type as you, but I'm not you.
+
+* A Person is a class, I am an instance of a class.
+* An object has methods, and variables. As best to model them.
+
+h4(code_heading).  Javascript 
+
+{% highlight js %}
+  
+  var orta = { name: "orta", hair:"brown" }
+  orta.do_dishes = function(){
+    console.log("dishing up")
+  }
+  orta.do_dishes();
+  orta
+{% endhighlight %}
+
+</div><div class="slide">
+
+
+h1. Objects are representational
+
+h1. ( though some can be abstract )
+
+The simple idea is that an object can represent something.
+To use the Artsy website as an example
+
+bq.         
+  Class -> Artist
+  Instance -> Jason Pollock
+
+  Or 
+
+bq.         
+  Class -> Artwork
+  Instance -> Number 1
+
+</div><div class="slide">
+
+h1. This allows us to share code between objects, because sharing is caring.
+
+h4(code_heading).  Ruby 
+
+{% highlight ruby %}
+
+  class Human
+    def dance
+      puts "dances!"
+    end
+  end
+
+  class Nerd < Human
+    def put_on_glasses
+      puts "check these specs out"
+    end
+  end
+
+  orta = Nerd.new
+  orta.put_on_glasses()
+  orta.dance()
+{% endhighlight %}
+
+
+</div><div class="slide">
+
+h1. Cooking metaphors
+
+bq. 
+  Recipe -> Code
+  Ingredients -> Classes
+  Ingredient sliced/diced -> Instance
+  Tools -> Text Editor
+  You -> Compiler
+
+</div><div class="slide">
+
+
+<iframe width="853" height="480" src="http://www.youtube.com/embed/2fVvfEPWk8M" frameborder="0" allowfullscreen></iframe>
+
+</div>
