@@ -25,6 +25,7 @@ h1. Why do we start programming?
 !/what_is_programming/assets/images/nope.jpg!
 
 
+
 </div><div class="slide">
 
 
