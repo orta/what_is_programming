@@ -20,6 +20,10 @@ h1. What is Programming?
 h1. Why do we start programming?
   
 * It's fun.
+* All the cool kids are doing it.
+
+!/what_is_programming/assets/images/nope.jpg!
+
 
 </div><div class="slide">
 
