@@ -229,7 +229,7 @@ To use the Artsy website as an example
 
 bq.         
   Class -> Artist
-  Instance -> Jason Pollock
+  Instance -> Jackson Pollock
 
   Or 
 
