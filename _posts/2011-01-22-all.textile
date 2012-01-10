@@ -3,7 +3,7 @@ title: "interface builder 4"
 slide: true
 ---
 
-<style>blockquote {  font-size: 1.5em; } </style>
+<style>blockquote {  font-size: 1.5em; }  .highlight code span { display: none;} .highlight:hover code span{ display:inline; }  </style>
 
 <div class="slide">
 
