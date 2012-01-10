@@ -116,6 +116,17 @@ h1. So what is happening here?
   
 </div><div class="slide">
 
+h1. Cooking metaphors
+
+bq. 
+  Recipe -> Code
+  Ingredients -> Classes
+  Ingredient sliced/diced -> Instance
+  Tools -> Text Editor
+  You -> Compiler
+
+</div><div class="slide">
+
 h1. page intentionally blank
 
 </div><div class="slide">
@@ -251,17 +262,6 @@ h4(code_heading).  Ruby
   orta.dance()
 {% endhighlight %}
 
-
-</div><div class="slide">
-
-h1. Cooking metaphors
-
-bq. 
-  Recipe -> Code
-  Ingredients -> Classes
-  Ingredient sliced/diced -> Instance
-  Tools -> Text Editor
-  You -> Compiler
 
 </div><div class="slide">
 
